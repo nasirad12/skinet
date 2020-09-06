@@ -19,19 +19,16 @@ export class BasketComponent implements OnInit {
 
   // tslint:disable-next-line: typedef
   removeBasketItem(item: IBasketItem) {
-    console.log('Basket Component RemoveBasketItem');
     this.basketService.removeItemFromBasket(item);
   }
 
   // tslint:disable-next-line: typedef
   incrementItemQuantity(item: IBasketItem) {
-    console.log('Basket Component incrementItemQuantity');
     this.basketService.incrementItemQuantity(item);
   }
 
   // tslint:disable-next-line: typedef
   decrementItemQuantity(item: IBasketItem) {
-    console.log('Basket Component decrementItemQuantity');
     this.basketService.decrementItemQuantity(item);
   }
 

@@ -12,7 +12,7 @@ import { CheckoutSuccessComponent } from './checkout-success/checkout-success.co
 
 
 @NgModule({
-  declarations: [CheckoutComponent, CheckoutAddressComponent, CheckoutDeliveryComponent, 
+  declarations: [CheckoutComponent, CheckoutAddressComponent, CheckoutDeliveryComponent,
     CheckoutReviewComponent, CheckoutPaymentComponent, CheckoutSuccessComponent],
   imports: [
     CommonModule,
@@ -21,3 +21,4 @@ import { CheckoutSuccessComponent } from './checkout-success/checkout-success.co
   ]
 })
 export class CheckoutModule { }
+

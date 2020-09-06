@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BasketService } from './basket/basket.service';
 import { AccountService } from 'src/app/account/account.service';
+import { OrdersService } from './orders/orders.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ export class AppComponent implements OnInit {
 
   title = 'Skinet';
 
-  constructor(private basketService: BasketService, private accountService: AccountService) {}
+  constructor(private basketService: BasketService, private accountService: AccountService, private ordersService: OrdersService) {}
 
   ngOnInit(): void {
     this.loadBasket();
